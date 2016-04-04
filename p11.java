@@ -19,11 +19,18 @@ public class p11 {
                     list2[i] = list[i];
                 }
             }
-            System.out.print(list2[i] + ", ");
-
+        }
+        for (int i=0; i<list2.length;i++){
+            if(list2[i]>0) {
+                if (i > 0) {
+                    System.out.print(", ");
+                }
+                System.out.print(list2[i]);
+            }
         }
 
 //        System.out.println(list1.toString());
 
     }
 }
+
