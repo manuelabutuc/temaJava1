@@ -45,7 +45,10 @@ public class p9 {
         }
         else{
             for (i = 0; i < list.length; i++) {
-                System.out.print(list[i] + ", ");
+                if (i > 0) {
+                    System.out.print(", ");
+                }
+                System.out.print(list[i]);
             }
 
         }
