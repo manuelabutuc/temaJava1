@@ -5,14 +5,15 @@ public class p9 {
     public static void main(String[] args) {
         /* Se da un sir. Sa se verifice daca sirul este ordonat crescator , iar daca nu este
         sa se ordoneze si sa se afiseze in ordine crescatoare */
-        int[] list = {6, 5, 23, 1, 13, 2, 7};
+        //int[] list = {5,6, 23, 1, 13, 2,13};
+        int[] list = {3,2,4};
         //int[] list = {1,3,6,8,9,89};
         int[] listcopy = list.clone();
 
 
         int i;
         int j;
-        boolean test=false;
+        boolean test=true;
         boolean flag = true;
         int temp;
         while (flag) {
@@ -30,17 +31,19 @@ public class p9 {
         }
 
         for (i = 0; i < list.length; i++) {
-            if (list[i] == listcopy[i]) {
-                test = true;
-            } else {
-                for (i = 0; i < list.length; i++) {
-                    System.out.print(list[i]+", ");
-
-                }
+            if (list[i] != listcopy[i]) {
+                test = false;
             }
         }
+
         if(test==true){
             System.out.println("Crescator"); //daca il punem mai sus, in "for", se afiseaza la fiecare iteratie
-        };
+        }
+        else{
+            for (i = 0; i < list.length; i++) {
+                System.out.print(list[i] + ", ");
+            }
+
+        }
     }
 }
