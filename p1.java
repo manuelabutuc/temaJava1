@@ -4,7 +4,6 @@ import java.util.Scanner;
  */
 public class p1 {
 
-
     public static void main(String[] args) {
 
          /*  1.Se da un sir de numere ordonate crescator.
@@ -26,7 +25,6 @@ public class p1 {
                 test = false;
             }
             i++;
-
         }
         if (test) {
             System.out.println("-1");
