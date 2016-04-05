@@ -8,7 +8,11 @@ public class p9 {
         //int[] list = {5,6, 23, 1, 13, 2,13};
         int[] list = {3,2,4};
         //int[] list = {1,3,6,8,9,89};
-        int[] listcopy = list.clone();
+
+        int[] listcopy = new int[list.length];
+        for (int i = 0; i < listcopy.length; i++) {
+            listcopy[i] = list[i];
+        }
 
 
         int i;
