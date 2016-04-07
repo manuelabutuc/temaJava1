@@ -15,6 +15,11 @@ public class p5 {
         Scanner in1 = new Scanner(System.in);
         int b = in1.nextInt();
 
-        System.out.println("a la puterea b este " + Math.pow(a,b));
+        int c=1;
+
+        for(int i=0; i<b; i++){
+            c=c*a;
+        }
+        System.out.println("a la puterea b este " + c);
     }
 }
